@@ -1,0 +1,13 @@
+
+    .loading_container{
+        @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+        font-family: 'Delius', cursive;
+        height: 100%;
+        width: 100%;
+        flex: none;
+    }
+    
+    .img_loading{
+        transform: translateY(15rem) translateX(50rem);
+        max-width: 20rem;
+    }

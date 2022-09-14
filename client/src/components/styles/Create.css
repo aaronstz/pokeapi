@@ -1,0 +1,190 @@
+:root{
+    --clr-neon: rgb(157, 206, 22);
+  }
+
+
+
+  .errors{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-shadow: 0px 0px 5px rgb(255, 0, 0);
+    display:flex;
+    position: absolute;
+    justify-content: center;
+  }
+
+  span{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 12px;
+    flex: none;
+    margin: 0 0 auto 0;
+    display: grid;
+    position: relative;
+    justify-content: center;
+  }
+
+    .body{
+        display: flex;
+        position: relative;
+        justify-content:center;
+    }
+   
+    .create{
+    height: 800px;
+    width: 650px;
+    margin-top: 50px;
+    color: white;
+    display: inline-block;
+    gap: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 162, 0, 0.384);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255,255,255,0.4) solid;
+    border-bottom: 1px rgba(40,40,40,0.35) solid;
+    border-right: 1px rgba(40,40,40,0.35) solid;
+    }
+
+    .t {
+        color: rgb(255, 255, 255);
+        /* text-align: center; */
+        text-shadow: 0 1px 5px rgb(248, 162, 105);
+        display: flex;
+        transform: translateY(35px);
+        margin-left: 100px;
+        font-size:larger;
+
+      }
+
+      form{
+        display:grid;
+        justify-content:left;
+        position: relative;
+        bottom: 4rem ;
+        gap: 15px;
+        margin: 0px;
+      }
+    
+      label{
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        
+      }
+
+      .card-create{
+        display: grid;
+        position: relative;
+        justify-content:center;
+        transform: translateY(-36rem);
+      }
+
+    .form {
+        display:flex;
+        position: relative;
+        justify-content:center;
+        transform: translateX(35px);
+    }
+    
+    .types{
+        flex: none;
+        display: inline-block;
+        justify-content: left;
+        position:absolute;
+        height: 1.5rem;
+        bottom: 8vw;
+        left: 23vh;
+    }
+
+    .li{
+      display:flex;
+      position: relative;
+      justify-content: right;
+    }
+    .volver{
+      text-align: center;
+      width: 70px;
+      height: 40px;
+      /* border: 0; */
+      /* position: fixed; */
+      margin-left: -530px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button {
+      width: 200px;
+      height: 70px;
+      border: 1px solid white;
+      background: #2f2f2f;
+      color: #fff;
+      font-size: 22px;
+      border-radius: 40px;
+      box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+      display:inline-block;
+      position: absolute;
+      transform: translateY(700px);      
+    }
+
+
+    .delete{
+      display:inline-block;
+      flex: none;
+      margin-right: 20px;
+      
+    }
+    .x_button{
+      display: flex;
+      position: relative;
+      justify-content:center;
+      right: -350%;
+      bottom: -3rem;
+      cursor: pointer;
+      width: 80px;
+      height: 30px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+
+    }
+
+    .typeDel{
+      display:flex;
+      position: absolute;
+      justify-content: center;
+      bottom: -13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    
+    .x_button:hover .typeDel{
+      color:transparent;
+    }
+
+    .x_button:hover{
+      background-color: white;
+      
+    }
+    .x_button:hover:before{
+      color: rgb(255, 72, 72);
+      content: 'x';
+      display:flex;
+      position: absolute;
+      justify-content: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .button:hover{
+        background: white;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(145, 255, 71);
+        box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    }
+
+
+    .button:focus {
+      background: #2bff72 ;
+      transition: 1s;
+      color: black;
+    }

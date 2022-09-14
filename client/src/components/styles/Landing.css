@@ -1,0 +1,123 @@
+:root{
+    --clr-neon: rgb(255, 134, 20);
+  }
+  
+  *,
+  *::before,
+  *::after{
+    box-sizing: border-box;
+  }
+  
+  .bg{
+    background-image: url('../../wallpaper/initials.jpg');
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-position:center;
+    background-color: rgb(255, 196, 119);
+    background-attachment: fixed ;
+    width: 100%;
+    height: 100%;
+  }
+  .title{
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100%;
+    /* background: #e3ebfe; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transform: translateY(-20rem) translateX(50rem);
+  }
+  
+  .btn {
+    width: 100px;
+    height: 70px;
+    border: 1px solid #4b4b4b;
+    outline: none;
+    animation-name: btn;
+    animation-duration: 4s;
+    background: #000000;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    transform: translateY(47rem) translateX(57rem);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    font-weight: bold;
+    color: black; 
+    background: #ffffff;
+  }
+  
+  
+  .check{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    transform: translateY(-80px) translateX(190px);
+    opacity: 0;
+  }
+  
+  .check svg {
+    width: 40px;
+    margin: 20px;
+  }
+  
+  svg path {
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+  
+  }
+  
+  
+  
+    .welcome {
+      font-size: 2em;
+      display: block;
+      position: absolute;
+      justify-content: center;
+      margin-bottom: 900px;
+      animation-name: welcome;
+      animation-duration: 2s;
+      transform: translateY(3rem) translateX(50rem);
+      color: rgb(0, 0, 0);
+      text-shadow: 6px 1px 4px rgba(109, 109, 109, 0.671);
+    }
+    
+    @keyframes welcome {
+      from {
+        transform: translateY(-10rem) translateX(50rem);
+        color: rgba(255, 255, 255, 0);
+        
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      }
+      to {
+        transform: translateY(3rem) translateX(50rem);
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 1px 4px rgba(0, 0, 0, 0.671);
+      }
+    }
+    @keyframes btn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }

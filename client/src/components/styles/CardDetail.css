@@ -1,0 +1,120 @@
+.content {
+    border: 1px solid rgb(161, 91, 58);
+    border-radius: 2rem;
+    margin: 6rem auto;
+    padding-bottom: 3rem;
+    width: 45rem;
+    height: 45rem;
+    color: #ffffff00;
+    background: rgba(162, 255, 0, 0.445);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+    backdrop-filter: blur(3rem);
+  }
+
+  .arrow{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 2rem;
+    display:flex;
+  }
+
+  .arrow:hover{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 1px black;
+  }
+
+  .types{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    margin: -12rem;
+    display:inline-block;
+    position: absolute;
+    justify-content: center;
+    
+  }
+  .title {
+    margin-top: 4rem;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.3rem rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    display:flex;
+    position: relative;
+    justify-content: center;
+    transform: translateY(-100%);
+    
+  }
+  .subtitle {
+    margin-top: 0.25rem;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.3rem rgb(143, 54, 54);
+    text-transform: uppercase;
+    font-weight: bold;
+    display:flex;
+    position: relative;
+    justify-content: center;
+    transform: translateY(-100%);
+    list-style:circle;
+  }
+
+  .text{
+    margin-top: 2.5rem;
+    font-size: 19px;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 0.3rem rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    display:flex;
+    position: relative;
+    justify-content: center;
+    transform: translateY(-100%);
+    list-style:circle;
+  }
+
+  .summary {
+    color: rgb(255, 255, 255);
+    padding: 0 4rem;
+    text-align: justify;
+    text-shadow: 1px 1px 1px rgb(194, 141, 97);
+    transform: translateY(10%) translateX(45%);
+    
+  }
+
+  
+  .img-responsive{
+    width: 20rem;
+    height: 22rem;
+    transform: translateY(-90%);
+    max-width: 20rem;
+  }
+
+
+  .score {
+    overflow: hidden;
+    border: solid 1px rgb(124, 150, 95);
+    border-radius: 20px;
+  }
+
+  
+  .score::-webkit-progress-bar {
+    background: linear-gradient(
+      90deg,
+      rgb(248, 17, 29) 0%,
+      rgb(252, 252, 73) 50%,
+      rgb(39, 236, 39) 100%
+    );
+  }
+  
+  .score::-webkit-progress-value {
+    background-color: rgba(228, 222, 222, 0.171);
+    backdrop-filter: blur(2rem);
+    box-shadow: 0 0 0.5rem rgb(8, 8, 8);
+    border-radius: 4rem;
+  }

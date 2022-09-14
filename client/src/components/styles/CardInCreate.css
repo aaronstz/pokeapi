@@ -1,0 +1,84 @@
+.img-create{
+    height: 75px;
+    width: 75px;
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    top: 60px;
+}
+
+.container-create{
+    top: 85%;
+    width: 13rem;
+    transform: translateY(0) translateX(0);
+    display: flex;
+    position: absolute;
+
+  }
+ 
+  .card-create {
+    color: white;
+    font-size: 12px;
+    height: 30rem ;
+    width: 19rem;
+    transition: height 1.5s;
+    backdrop-filter: blur(5px);
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    background-color: rgba(131, 131, 131, 0.24);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-left: 150%;
+    }
+
+
+
+
+    .title-create{
+        text-transform: capitalize;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fffefe;
+        font-weight: bold;
+        font-size: 1.55rem;
+        text-shadow: 1px 2px 3px #262626;
+        flex: none;
+        margin-top: 0px;
+        margin-left: 0%;
+    }
+
+    .type-create{
+        text-transform: capitalize;
+        color: #ffffff00;
+        margin: 0;
+        display: flex;
+        position: relative;
+        justify-content:center;
+        bottom: 30px;
+
+    } 
+
+    .card-create:hover .type{
+        font-size: 1em;
+        color: #ffffff;
+        transition: font-size 1.5s;
+        transition: color 1.5s;
+        text-shadow: 0px 4px 5px #ffffff;
+        text-shadow: 1px 2px 3px #262626;
+        transition: text-shadow 1.5s;
+        margin: 0;
+    }
+
+    .stats{
+        display:grid;
+        position: absolute;
+        justify-content: center;
+        bottom: 10px;
+        font-size: 0.65rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.281);
+        text-transform: capitalize;
+    }
