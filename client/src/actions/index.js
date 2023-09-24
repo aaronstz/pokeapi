@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export function getPokes(){
     return function(dispatch){
-        fetch('http://localhost:3001/pokemons')
+        fetch('/pokemons')
         .then(res => res.json())
         .then(json => dispatch({
             type: 'GET_POKEMONS',
@@ -14,7 +14,7 @@ export function getPokes(){
 
 export function getTypes(){
     return function(dispatch){
-        fetch('http://localhost:3001/types')
+        fetch('/types')
         .then(res => res.json())
         .then(json => dispatch({
             type: 'GET_TYPES',
@@ -54,7 +54,7 @@ export function filterCreated(payload){
 export function getNamePokes(name){
     return async function(dispatch){
         try {
-            const json = await axios('http://localhost:3001/pokemons?name=' + name)
+            const json = await axios('/pokemons?name=' + name)
             return dispatch({ 
                 type: 'GET_NAMES',
                 payload: json.data
@@ -68,14 +68,14 @@ export function getNamePokes(name){
 
 export function postPoke(payload){
     return async function (dispatch) {
-        await axios.post('http://localhost:3001/pokemons', payload)
+        await axios.post('/pokemons', payload)
     }
 }
 
 export function getDetails(id){
     return async function(dispatch) {
         try {
-            const json = await axios(`http://localhost:3001/pokemons/${id}`);
+            const json = await axios(`/pokemons/${id}`);
             return dispatch({
                 type: 'GET_DETAILS',
                 payload: json.data
@@ -89,7 +89,7 @@ export function getDetails(id){
 export function deletePoke(id){
     return async function(dispatch) {
         try {
-            const json = await axios.delete('http://localhost:3001/pokemons/' + id);
+            const json = await axios.delete('/pokemons/' + id);
             return dispatch({
                 type: 'DELETE_POKEMON',
                 payload: json.data
