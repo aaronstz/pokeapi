@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { store } from './store';
 import { Provider } from 'react-redux';
-// import axios from "axios"
+import axios from "axios"
 // import dotenv from "dotenv";
 // dotenv.config();
 
